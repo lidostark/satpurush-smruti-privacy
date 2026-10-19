@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Satpurush Smruti Privacy Policy</title>
+  <style>
+    :root { --bg: #faf7f3; --text: #2a2622; --muted: #6e665e; color-scheme: light; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #1a1714; --text: #f1ebe4; --muted: #a99e93; color-scheme: dark; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 Georgia, "Times New Roman", serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+    h1 { font-size: 1.8rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 6px; }
+    .muted { color: var(--muted); }
+    code { font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Satpurush Smruti, a Chrome extension. Last updated 1 October 2026.</p>
+
+    <p>Satpurush Smruti does not collect, sell or transmit any personal data. All photos, shloks and fonts are included in the extension, so the page itself loads nothing from the internet.</p>
+
+    <h2>Search and shortcuts</h2>
+    <p>When you type in the search bar and press Enter, your browser opens Google with what you typed, under Google's own privacy policy. A shortcut opens its website only when you click it.</p>
+    <p>Shortcut icons come first from your browser's own cache of site icons (the <code>favicon</code> permission), which costs no network request. If your browser has no icon for a site, the extension loads that site's own icon file (for example <code>https://example.com/favicon.ico</code>), so the site is contacted once and your browser then caches the icon. Only the sites in your own four shortcuts are ever contacted, no third-party icon service is used, and nothing about you is sent beyond the ordinary request for that image file. Two shortcut sites publish their icon on their company's content network instead (Gmail on <code>gstatic.com</code>, Outlook on <code>outlook.live.com</code>), and those are used for them.</p>
+
+    <h2>Images you add</h2>
+    <p>Photos you add from the settings page are scaled and stored in your own browser (IndexedDB, under the <code>unlimitedStorage</code> permission). They are never uploaded, never sent to the developer, and are not synced between your devices. Removing one in settings, or uninstalling the extension, deletes it.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Your settings (which translations are shown, clock format, location, text position, wallpaper categories and shortcuts) are saved with <code>chrome.storage.sync</code>. If Chrome sync is on, your browser syncs them between your own devices. The developer never receives them. Whether each translation is open or closed on the new tab is saved on your device with <code>chrome.storage.local</code>.</p>
+
+    <h2>Location</h2>
+    <p>"Use my location" in settings asks your browser for your position once. The extension uses it only on your device, to calculate sunrise and the tithi. The coordinates are saved in your settings and sent nowhere.</p>
+
+    <h2>Removing your data</h2>
+    <p>Uninstalling the extension removes all of its stored data.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <span id="contact">[support email]</span></p>
+  </main>
+</body>
+</html>
